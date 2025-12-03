@@ -59,3 +59,17 @@ def good_day(name, ending):
 good_day("Arpita", "Thank You")
 good_day("Anaya", "Thank You")
 good_day("Sabana", "Thanks")
+
+# Recursion Function
+'''
+Recursion is a function which calls itself.
+It is used to directly use a mathematical formula as function.
+For instance,
+'''
+# Factorial of a number:
+def factorial(n):
+    if (n==0 or n==1):
+        return 1
+    return n* factorial(n-1)
+n=int(input("Enter a number: "))
+print(f"The factorial of this number is:{factorial(n)} ")
